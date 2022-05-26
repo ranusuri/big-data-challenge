@@ -27,6 +27,7 @@ CREATE TABLE vine_table (
   vine TEXT
 );
 
+--"https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Tools_v1_00.tsv.gz"
 
 -- SQL quereis
 select count(*) from review_id_table
@@ -44,3 +45,25 @@ output: 1053515
 select count(*) from vine_table;
 
 output: 1741100
+
+
+
+-- https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Software_v1_00.tsv.gz
+
+
+-- SQL quereis
+select count(*) from review_id_table
+
+Output : 341931
+
+select count(*) from products;
+
+output: 28736
+
+select count(*) from customers;
+
+output: 275379
+
+select count(*) from vine_table;
+
+output: 341931
